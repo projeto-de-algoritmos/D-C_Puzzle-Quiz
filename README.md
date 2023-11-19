@@ -22,7 +22,9 @@ Nesse mundo virtual, a lógica é sua bússola, a criatividade é sua ferramenta
 <p align="justify">
 A cada resposta correta, você desvenda uma nova camada do mistério. E mesmo nas tentativas que não atingem o objetivo, há o aprendizado. Cada erro é um degrau a mais na escalada da compreensão, uma oportunidade de aprimorar sua forma de abordar problemas e de expandir sua capacidade de solucioná-los.
 </p>
-
+<p align="justify">
+Foi utilizado o algoritmo da contagem de inverções para descobrir se a resposta do jogador está correta ou não. 
+</p>
 
 ## Screenshots
 
