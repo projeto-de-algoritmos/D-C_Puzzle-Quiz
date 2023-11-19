@@ -38,9 +38,19 @@ Foi utilizado o algoritmo da contagem de inverções para descobrir se a respost
 
 #### Passo 1
 
-- Após a instalação de todos os pŕe-requisitos, dentro da pasta backpacker utilize o comando:
-  ```
-  npm start
+- Pelo terminal, dentro da pasta puzzle insira o seguinte comando:
+
+```
+npm install
+```
+
+#### Passo 2
+
+- Após o passo 1, dentro da pasta puzzle utilize o comando:
+
+```
+npm start
+```
 
 ### Pronto, o projeto estará rodando!
 
