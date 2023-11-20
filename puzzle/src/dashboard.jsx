@@ -84,20 +84,21 @@ function Dashboard() {
 
   const arraysEqual = (arr1, arr2) => arr1.join(',') === arr2.join(',');
 
-  const submitAnswer = (index) => {
-    const selectedAnswer = selectedOptions[index];
-    const correctAnswerKey = questionsData.perguntas_respostas[index].resposta;
-    const isCorrect = selectedAnswer === correctAnswerKey;
+  // const submitAnswer = (index) => {
+  //   const selectedAnswer = selectedOptions[index];
+  //   const correctAnswerKey = questionsData.perguntas_respostas[index].resposta;
+  //   const isCorrect = selectedAnswer === correctAnswerKey;
 
-    setFeedback(`Pergunta ${index + 1}: ${isCorrect ? 'Correta' : 'Incorreta'}`);
-  };
+  //   setFeedback(`Pergunta ${index + 1}: ${isCorrect ? 'Correta' : 'Incorreta'}`);
+  // };
 
   const goToNextPage = () => setCurrentPage((prevPage) => Math.min(prevPage + 1, questionsData.perguntas_respostas.length - 1));
   const goToPrevPage = () => setCurrentPage((prevPage) => Math.max(prevPage - 1, 0));
 
   return (
-    <div>
-      <h1>Enigmas</h1>
+    <div className='container'>
+      <div className='form'>
+      <h1>Puzzle Quiz</h1>
       <form>
         {questionsData.perguntas_respostas.slice(currentPage, currentPage + 1).map((question, index) => (
           <div key={index}>
@@ -114,20 +115,22 @@ function Dashboard() {
                 {option}
               </label>
             ))}
-            <button type="button" onClick={() => submitAnswer(currentPage)}>
+            {/* <button type="button" onClick={() => submitAnswer(currentPage)}>
               Submeter Alternativa
-            </button>
+            </button> */}
             <p>{feedback}</p>
           </div>
         ))}
-
-        <button type="button" onClick={goToPrevPage}>
+        <div className='buttons-page'>
+        <button className='page-button' type="button" onClick={goToPrevPage}>
           Página Anterior
         </button>
-        <button type="button" onClick={goToNextPage}>
+          <button className='page-button' type="button" onClick={goToNextPage}>
           Próxima Página
         </button>
+        </div>
       </form>
+      </div>
     </div>
   );
 }

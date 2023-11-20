@@ -1,3 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Cinzel+Decorative:wght@700&family=Orbitron&family=Raleway&family=Ubuntu+Mono&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Cinzel+Decorative:wght@700;900&family=Orbitron&family=Raleway&family=Ubuntu+Mono&family=Ubuntu:wght@300&display=swap');
+
 .container {
-  
+  background-image: url('../images/bussula.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.form {
+  background-color: rgba(139, 80, 8, 0.814);
+  width: 60%;
+  height: 65%;
+  position: absolute;
+  left: 22%;
+  top: 18%;
+  border-radius: 50px;
+}
+.page-button {
+  background-color: rgb(165, 134, 42);
+  margin-right: 9px;
+  border: none;
+  color: white;
+  height: 30px;
+  font-family: 'Cinzel Decorative';
+}
+.buttons-page {
+  margin-left: 34%;
+}
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'Cinzel Decorative';
+  font-weight: bold;
+  font-size: 45px;
+  color: rgb(120, 21, 21);
+  -webkit-text-stroke: 0.6px black;
+}
+form {
+  align-items: center;
+}
+p {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 4%;
+  font-size: 27px;
+  font-family: 'Cinzel Decorative';
+  font-weight: 100px;
+  /* color: rgb(206, 106, 35);
+  -webkit-text-stroke: 0.6px white; */
+  color: rgb(120, 71, 21);
+    -webkit-text-stroke: 0.6px rgb(255, 166, 0);
+}
+label {
+  text-align: center;
+  margin-left: 8%;
+  padding-right: 20px;
+  font-size: 17px;
+  font-family: 'Cinzel Decorative';
+  font-weight: 100px;
+  /* color: rgb(206, 106, 35);
+  -webkit-text-stroke: 0.6px white; */
+  color: rgb(120, 21, 21);
+    -webkit-text-stroke: 0.6px black;
 }
