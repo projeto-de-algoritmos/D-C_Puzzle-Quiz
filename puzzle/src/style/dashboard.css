@@ -36,8 +36,22 @@
   margin-left: 40%;
   margin-top: 3%;
 }
+.init {
+  background-color: rgb(165, 134, 42);
+  margin-right: 9px;
+  border: none;
+  color: white;
+  height: 40px;
+  font-family: 'Cinzel Decorative';
+  margin-left: 43%;
+  border: 1px solid white;
+}
 .buttons-page {
   margin-left: 34%;
+}
+.initial {
+  text-align: center;
+  padding: 10px 20px 0px 10px;
 }
 h1 {
   text-align: center;
@@ -45,6 +59,15 @@ h1 {
   font-family: 'Cinzel Decorative';
   font-weight: bold;
   font-size: 45px;
+  color: rgb(120, 21, 21);
+  -webkit-text-stroke: 0.6px black;
+}
+h2 {
+  text-align: center;
+  /* padding-top: 10px; */
+  font-family: 'Cinzel Decorative';
+  font-weight: bold;
+  font-size: 30px;
   color: rgb(120, 21, 21);
   -webkit-text-stroke: 0.6px black;
 }

@@ -2,9 +2,22 @@ import React, { useState } from 'react';
 import './style/dashboard.css';
 import questionsData from './perguntas.json';
 
+function WelcomePage({ onStartQuiz }) {
+  return (
+    <div className='form'>
+      <h1>Puzzle Quiz!</h1>
+      <h2>Bem-Vindo!</h2>
+      <p className='initial'>
+        Nesse mundo virtual, a lógica é sua bússola, a criatividade é sua ferramenta, e a habilidade de pensar fora da caixa é sua chave para desvendar os mistérios. Os desafios propostos são convites para expandir seu horizonte de ideias, para explorar perspectivas e descobrir soluções.
+      </p>
+      <button className='init' onClick={onStartQuiz}>Iniciar Quiz</button>
+    </div>
+  );
+}
+
 function Dashboard() {
   const [selectedOptions, setSelectedOptions] = useState(Array(10).fill(''));
-  const [currentPage, setCurrentPage] = useState(0);
+  const [currentPage, setCurrentPage] = useState('welcome');
   const [feedback, setFeedback] = useState('');
 
   const options = questionsData.perguntas_respostas.map((question) => question.opcoes);
@@ -61,6 +74,7 @@ function Dashboard() {
     newSelectedOptions[index] = value;
     setSelectedOptions(newSelectedOptions);
   };
+
   const submitAnswer = (index) => {
     const selectedAnswer = selectedOptions[index];
     const correctAnswerKey = questionsData.perguntas_respostas[index].resposta;
@@ -94,6 +108,10 @@ function Dashboard() {
     console.log(resultContInvers, 'teste');
   };
 
+  const startQuiz = () => {
+    setCurrentPage(0);
+  };
+
   const swap = (x, y, vet) => {
     const temp = vet[x];
     vet[x] = vet[y];
@@ -106,41 +124,46 @@ function Dashboard() {
 
   return (
     <div className='container'>
-      <div className='form'>
-      <h1>Puzzle Quiz</h1>
-      <form>
-        {questionsData.perguntas_respostas.slice(currentPage, currentPage + 1).map((question, index) => (
-          <div key={index}>
-            <p>{`Pergunta ${currentPage + 1}: ${question.pergunta}`}</p>
-            {Object.entries(question.opcoes).map(([key, option]) => (
-              <label key={key}>
-                <input
-                  type="radio"
-                  name={`question${currentPage}`}
-                  value={key}
-                  checked={selectedOptions[currentPage] === key}
-                  onChange={() => handleOptionChange(currentPage, key)}
-                />
-                {option}
-              </label>
-            ))}
-            <button className='submit' type="button" onClick={() => submitAnswer(currentPage)}>
-              Verificar resposta
-            </button>
-            <p>{feedback}</p>
+      {currentPage === 'welcome' ? (
+        <WelcomePage onStartQuiz={startQuiz} />
+      ) : (
+        <div className='container'>
+          <div className='form'>
+            <h1 className='quiz-title'>Puzzle Quiz</h1>
+            <form>
+              {questionsData.perguntas_respostas.slice(currentPage, currentPage + 1).map((question, index) => (
+                <div key={index}>
+                  <p>{`Pergunta ${currentPage + 1}: ${question.pergunta}`}</p>
+                  {Object.entries(question.opcoes).map(([key, option]) => (
+                    <label key={key}>
+                      <input
+                        type="radio"
+                        name={`question${currentPage}`}
+                        value={key}
+                        checked={selectedOptions[currentPage] === key}
+                        onChange={() => handleOptionChange(currentPage, key)}
+                      />
+                      {option}
+                    </label>
+                  ))}
+                  <button className='submit' type="button" onClick={() => submitAnswer(currentPage)}>
+                    Verificar resposta
+                  </button>
+                  <p className='feedback'>{feedback}</p>
+                </div>
+              ))}
+              <div className='buttons-page'>
+                <button className='page-button' type="button" onClick={goToPrevPage}>
+                  Página Anterior
+                </button>
+                <button className='page-button' type="button" onClick={goToNextPage}>
+                  Próxima Página
+                </button>
+              </div>
+            </form>
           </div>
-        ))}
-        <div className='buttons-page'>
-
-            <button className='page-button' type="button" onClick={goToPrevPage}>
-          Página Anterior
-        </button>
-            <button className='page-button'type="button" onClick={goToNextPage}>
-          Próxima Página
-        </button>
         </div>
-      </form>
-      </div>
+      )}
     </div>
   );
 }
