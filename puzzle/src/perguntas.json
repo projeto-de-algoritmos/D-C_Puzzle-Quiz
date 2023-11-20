@@ -1,0 +1,154 @@
+{
+  "perguntas_respostas": [
+    {
+      "pergunta": "O que é algo que é sempre seguido, mas nunca alcançado?",
+      "opcoes": {
+        "a": "O tempo",
+        "b": "O sonho",
+        "c": "A sombra",
+        "d": "O destino"
+      },
+      "resposta": "d"
+    },
+    {
+      "pergunta": "O que é algo que voa sem asas e chora sem olhos?",
+      "opcoes": {
+        "a": "O vento",
+        "b": "Uma nuvem",
+        "c": "Um raio",
+        "d": "Um fantasma"
+      },
+      "resposta": "a"
+    },
+    {
+      "pergunta": "O que é algo que é feito para ser quebrado?",
+      "opcoes": {
+        "a": "Um lápis",
+        "b": "Um segredo",
+        "c": "Uma promessa",
+        "d": "Um ovo"
+      },
+      "resposta": "b"
+    },
+    {
+      "pergunta": "O que é algo que tem muitos dentes, mas não pode mastigar?",
+      "opcoes": {
+        "a": "Um pente",
+        "b": "Uma serra",
+        "c": "Uma chave",
+        "d": "Uma baleia"
+      },
+      "resposta": "a"
+    },
+    {
+      "pergunta": "O que é algo que é mais frágil do que o vidro e até o vento pode quebrar?",
+      "opcoes": {
+        "a": "A confiança",
+        "b": "Uma pena",
+        "c": "A paciência",
+        "d": "O amor"
+      },
+      "resposta": "a"
+    },
+    {
+      "pergunta": "O que é algo que sempre volta, mas nunca chega?",
+      "opcoes": {
+        "a": "O futuro",
+        "b": "A lembrança",
+        "c": "O horizonte",
+        "d": "A saudade"
+      },
+      "resposta": "c"
+    },
+    {
+      "pergunta": "O que é algo que todos têm, mas que nunca podem perder?",
+      "opcoes": {
+        "a": "A idade",
+        "b": "O nome",
+        "c": "O passado",
+        "d": "O presente"
+      },
+      "resposta": "b"
+    },
+    {
+      "pergunta": "O que é algo que tem muitas chaves, mas não pode abrir uma porta?",
+      "opcoes": {
+        "a": "O cofre",
+        "b": "O piano",
+        "c": "O dicionário",
+        "d": "O telefone"
+      },
+      "resposta": "b"
+    },
+    {
+      "pergunta": "O que é algo que aumenta quando se compartilha?",
+      "opcoes": {
+        "a": "O conhecimento",
+        "b": "O amor",
+        "c": "O dinheiro",
+        "d": "A solidariedade"
+      },
+      "resposta": "a"
+    },
+    {
+      "pergunta": "O que é algo que é sempre verde e sempre molhado?",
+      "opcoes": {
+        "a": "A floresta",
+        "b": "A grama",
+        "c": "O abacate",
+        "d": "O sapo"
+      },
+      "resposta": "d"
+    },
+    {
+      "pergunta": "O que é algo que é sempre cortado, mas nunca se move?",
+      "opcoes": {
+        "a": "A televisão",
+        "b": "O papel",
+        "c": "O livro",
+        "d": "O vidro"
+      },
+      "resposta": "b"
+    },
+    {
+      "pergunta": "O que é algo que todos têm, mas alguns tentam esconder?",
+      "opcoes": {
+        "a": "O passado",
+        "b": "O presente",
+        "c": "O futuro",
+        "d": "O talento"
+      },
+      "resposta": "a"
+    },
+    {
+      "pergunta": "O que é algo que é sempre cheio, mas nunca fica completo?",
+      "opcoes": {
+        "a": "A balança",
+        "b": "O tempo",
+        "c": "O vazio",
+        "d": "O espaço"
+      },
+      "resposta": "c"
+    },
+    {
+      "pergunta": "O que é algo que é feito para ser quebrado antes de ser usado?",
+      "opcoes": {
+        "a": "O segredo",
+        "b": "O vidro",
+        "c": "O lápis",
+        "d": "O coração"
+      },
+      "resposta": "b"
+    },
+    {
+      "pergunta": "O que é algo que é nosso desde o nascimento, mas nunca o vemos crescer?",
+      "opcoes": {
+        "a": "A amizade",
+        "b": "O talento",
+        "c": "O pensamento",
+        "d": "O nome"
+      },
+      "resposta": "d"
+    }
+  ]
+}
