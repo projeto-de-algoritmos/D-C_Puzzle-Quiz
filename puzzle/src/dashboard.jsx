@@ -65,6 +65,7 @@ function swap(x, y, vet){
 function Dashboard() {
   const [selectedOptions, setSelectedOptions] = useState(Array(10).fill(''));
   const options = questionsData.perguntas_respostas.map((question) => question.opcoes);
+  const respostaCorreta = questionsData.perguntas_respostas.map((question) => question.resposta);
   const [currentPage, setCurrentPage] = useState(0);
   const [feedback, setFeedback] = useState('');
 
@@ -74,18 +75,22 @@ function Dashboard() {
     setSelectedOptions(newSelectedOptions);
 
     const initialOrder = Object.keys(options[index]).map((key) => options[index][key]); // Array representando a ordem inicial
-    //const result =  await newSelectedOptions.map((option) => options[index][option]);
+    const result =  await newSelectedOptions.map((option) => options[index][option]);
 
     const vetCheck = [1,2,3,4];
-    let resultContInvers = SortAndContAndMerge(vetCheck, 0, 0);
+    let resultContInvers;
 
-    if (arraysEqual(resultContInvers.vet, initialOrder)) {
+    if (respostaCorreta === "local p resposta que a pessoa escolheu") {
       resultContInvers = SortAndContAndMerge(vetCheck, 0, 0);
-      setFeedback(`Resposta da pergunta ${index + 1} está correta.`);
     } else {
       swap(0, 3, vetCheck);
       resultContInvers = SortAndContAndMerge(vetCheck, 0, 0);
+    }
+
+    if(resultContInvers != 0){
       setFeedback(`Resposta da pergunta ${index + 1} está incorreta.`);
+    } else{
+      setFeedback(`Resposta da pergunta ${index + 1} está correta.`);
     }
   };
 
