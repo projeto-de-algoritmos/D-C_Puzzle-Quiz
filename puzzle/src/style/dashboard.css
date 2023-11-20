@@ -12,7 +12,7 @@
 .form {
   background-color: rgba(139, 80, 8, 0.814);
   width: 60%;
-  height: 65%;
+  height: 70%;
   position: absolute;
   left: 22%;
   top: 18%;
@@ -25,6 +25,16 @@
   color: white;
   height: 30px;
   font-family: 'Cinzel Decorative';
+}
+.submit {
+  background-color: rgb(165, 134, 42);
+  margin-right: 9px;
+  border: none;
+  color: white;
+  height: 30px;
+  font-family: 'Cinzel Decorative';
+  margin-left: 40%;
+  margin-top: 3%;
 }
 .buttons-page {
   margin-left: 34%;
@@ -43,14 +53,15 @@ form {
 }
 p {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
   margin-bottom: 4%;
   font-size: 27px;
   font-family: 'Cinzel Decorative';
   font-weight: 100px;
   /* color: rgb(206, 106, 35);
   -webkit-text-stroke: 0.6px white; */
-  color: rgb(120, 71, 21);
+  color: rgba(181, 155, 26, 0.782);
+  /* color: rgb(120, 71, 21); */
     -webkit-text-stroke: 0.6px rgb(255, 166, 0);
 }
 label {
