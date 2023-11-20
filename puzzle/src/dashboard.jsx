@@ -86,7 +86,8 @@ function Dashboard() {
     }
 
     if (resultContInvers.contInver !== 0) {
-      setFeedback(`Resposta da pergunta ${index + 1} está incorreta.`);
+      setFeedback(`Resposta da pergunta ${index + 1} está incorreta. A resposta correta é a opção ${correctAnswerKey}.`);
+
     } else {
       setFeedback(`Resposta da pergunta ${index + 1} está correta.`);
     }

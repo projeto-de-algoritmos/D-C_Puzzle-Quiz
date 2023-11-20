@@ -14,16 +14,16 @@
 ## Sobre
 
 <p align="justify">
-O <strong>Desafios Enigmáticos</strong> é muito mais do que um simples jogo com questões enigmáticas, é uma experiência que desafia sua mente, que eleva a fasquia do seu raciocínio e convida você a uma viagem pelo desconhecido. Cada enigma apresentado é como uma fechadura para uma nova e instigante dimensão do pensamento, um convite para testar seus limites cognitivos.
+O <strong>Puzzle Quiz</strong> é muito mais do que um simples jogo com questões enigmáticas, é uma experiência que desafia sua mente, que eleva o nível do seu raciocínio e convida você a uma viagem pelo desconhecido. Cada enigma apresentado é como uma porta para uma nova e instigante dimensão do pensamento, um convite para testar seus limites cognitivos.
 </p>
 <p align="justify">
-Nesse mundo virtual, a lógica é sua bússola, a criatividade é sua ferramenta e a habilidade de pensar fora da caixa é sua chave para desvendar os mistérios. Os desafios cerebrais propostos são convites para expandir seu horizonte mental, para explorar ângulos não percebidos e para descobrir soluções.
+Nesse mundo virtual, a lógica é sua bússola, a criatividade é sua ferramenta, e a habilidade de pensar fora da caixa é sua chave para desvendar os mistérios. Os desafios propostos são convites para expandir seu horizonte de ideias, para explorar perspectivas e descobrir soluções.
 </p>
 <p align="justify">
-A cada resposta correta, você desvenda uma nova camada do mistério. E mesmo nas tentativas que não atingem o objetivo, há o aprendizado. Cada erro é um degrau a mais na escalada da compreensão, uma oportunidade de aprimorar sua forma de abordar problemas e de expandir sua capacidade de solucioná-los.
+A cada resposta correta, desvenda-se uma nova camada do mistério. Mesmo nas tentativas que não alcançam o objetivo, há aprendizado. Cada erro representa um degrau adicional na escalada da compreensão, proporcionando uma oportunidade para aprimorar a abordagem de problemas e expandir a capacidade de solucioná-los.
 </p>
 <p align="justify">
-Foi utilizado o algoritmo da contagem de inverções para descobrir se a resposta do jogador está correta ou não. 
+Foi utilizado o algoritmo 'contagem de inversões' para descobrir se a resposta do jogador está correta ou não. 
 </p>
 
 ## Screenshots

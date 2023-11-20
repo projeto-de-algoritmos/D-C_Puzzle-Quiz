@@ -12,10 +12,10 @@
 .form {
   background-color: rgba(139, 80, 8, 0.814);
   width: 60%;
-  height: 70%;
+  height: 75%;
   position: absolute;
   left: 22%;
-  top: 18%;
+  top: 15%;
   border-radius: 50px;
 }
 .page-button {
