@@ -6,55 +6,60 @@ function merge(esqerd, direit) {
   let vetTemp = [];
 
   while (esqerd.length && direit.length) {
-    if (esqerd[0] < direit[0]) {
-      vetTemp.push(esqerd.shift());
-    } else {
-      vetTemp.push(direit.shift());
-    }
+      if (esqerd[0] < direit[0]) { 
+          vetTemp.push(esqerd.shift()); // remove o primeiro elemento que esta no "esqerd" e retorna esse elemento, add ele no vetTemp 
+      } else {
+          vetTemp.push(direit.shift());
+      }
   }
-
-  return vetTemp.concat(esqerd, direit);
-}
-
-async function SortAndContAndMergeAsync(A, indAtual, numQtdInver) {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      let qtdInver = numQtdInver;
-      let atual = indAtual;
-      let proximo = atual + 1;
-      let termina = A.length;
-
-      if (atual === A.length - 1) {
-        const vetOrden = mergeSort(A);
-        resolve({ vet: vetOrden, contInver: qtdInver });
-      }
-
-      while (termina !== 1) {
-        if (A[proximo] < A[atual]) {
-          qtdInver++;
-          proximo++;
-        } else {
-          proximo++;
-        }
-        termina--;
-      }
-
-      atual++;
-      resolve(SortAndContAndMergeAsync(A, atual, qtdInver));
-    }, 0);
-  });
+  
+  return vetTemp.concat(esqerd, direit); // junta os valores da esquerda com a direita e insere no vetTemp 
 }
 
 function mergeSort(vet) {
   if (vet.length <= 1) {
-    return vet;
+      return vet;
   }
 
-  const meio = Math.floor(vet.length / 2);
-  const esqerd = vet.slice(0, meio);
-  const direit = vet.slice(meio);
+  const meio = Math.floor(vet.length / 2); // divide ao meio
+  const esqerd = vet.slice(0, meio); // valores da posicao 0 ate meio (A)
+  const direit = vet.slice(meio); // valores da posisao meio ate final (B)
 
   return merge(mergeSort(esqerd), mergeSort(direit));
+}
+
+function SortAndContAndMerge(A, indAtual, numQtdInver) {
+  let qtdInver = numQtdInver;
+  let atual = indAtual;
+  let proximo = atual+1;
+  let termina = A.length;
+
+  if (atual === (A.length-1)) {
+      const vetOrden = mergeSort(A);
+      return {vet: vetOrden, contInver: qtdInver};
+  }
+
+  while (termina != 1) {
+      if (A[proximo] < A[atual]) {
+          qtdInver++; // conta a quantidade de invercoes
+          proximo++;
+      }
+      else{
+          proximo++;
+      }
+      termina--;
+  }
+
+  atual++;
+  return SortAndContAndMerge(A, atual, qtdInver);
+}
+
+function swap(x, y, vet){
+  let vetSwap = vet;
+  const temp = vetSwap[x];
+  vetSwap[x] = vetSwap[y];
+  vetSwap[y] = temp;
+  return vetSwap;
 }
 
 function Dashboard() {
@@ -69,15 +74,17 @@ function Dashboard() {
     setSelectedOptions(newSelectedOptions);
 
     const initialOrder = Object.keys(options[index]).map((key) => options[index][key]); // Array representando a ordem inicial
-    const result = await SortAndContAndMergeAsync(
-      newSelectedOptions.map((option) => options[index][option]),
-      0,
-      0
-    );
+    //const result =  await newSelectedOptions.map((option) => options[index][option]);
 
-    if (arraysEqual(result.vet, initialOrder)) {
+    const vetCheck = [1,2,3,4];
+    let resultContInvers = SortAndContAndMerge(vetCheck, 0, 0);
+
+    if (arraysEqual(resultContInvers.vet, initialOrder)) {
+      resultContInvers = SortAndContAndMerge(vetCheck, 0, 0);
       setFeedback(`Resposta da pergunta ${index + 1} está correta.`);
     } else {
+      swap(0, 3, vetCheck);
+      resultContInvers = SortAndContAndMerge(vetCheck, 0, 0);
       setFeedback(`Resposta da pergunta ${index + 1} está incorreta.`);
     }
   };
