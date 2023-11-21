@@ -1,5 +1,3 @@
-![image](https://github.com/projeto-de-algoritmos/D-C_Puzzle-Quiz/assets/64814266/97d4d793-e46f-4d1e-8bfd-b5d8d837b8e8)![image](https://github.com/projeto-de-algoritmos/D-C_Puzzle-Quiz/assets/64814266/71dc68e0-3d01-4350-947f-38f68fd9a689)#  D-C_Puzzle-Quiz
-
 **Conteúdo da Disciplina**: Dividir e Conquistar<br>
 
 ## Alunos
