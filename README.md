@@ -26,10 +26,18 @@ Foi utilizado o algoritmo 'contagem de inversões' para descobrir se a resposta 
 
 ## Screenshots
 
-A **Imagem 1** ilustra a página inicial com uma história para a imersão do jogador. As próximas imagens demonstram uma das 15 perguntas e também a resposta correta.
-
+A **Imagem 1** ilustra a página inicial com uma história para a imersão do jogador.
 **Imagem 1 - inicio** 
 ![img1](./puzzle/src/images/img1.png)
+
+**Imagem 2 - Exemplo** 
+![img1](./puzzle/src/images/ex.png)
+
+**Imagem 3 - Resposta Correta** 
+![img1](./puzzle/src/images/correta.png)
+
+**Imagem 4 - Resposta Incorreta** 
+![img1](./puzzle/src/images/errada.png)
 
 
 ## Instalação 
