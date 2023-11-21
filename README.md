@@ -1,5 +1,3 @@
-# D-C_DesafiosEnigmáticos
-
 **Conteúdo da Disciplina**: Dividir e Conquistar<br>
 
 ## Alunos
@@ -27,6 +25,12 @@ Foi utilizado o algoritmo 'contagem de inversões' para descobrir se a resposta 
 </p>
 
 ## Screenshots
+
+A **Imagem 1** ilustra a página inicial com uma história para a imersão do jogador. As próximas imagens demonstram uma das 15 perguntas e também a resposta correta.
+
+**Imagem 1 - inicio** 
+![img1](./puzzle/src/images/img1.png)
+
 
 ## Instalação 
 **Linguagem**: JavaScript<br>
