@@ -143,7 +143,7 @@ function Dashboard() {
                         checked={selectedOptions[currentPage] === key}
                         onChange={() => handleOptionChange(currentPage, key)}
                       />
-                      {option}
+                      {`${key}. ${option}`} {/* Adiciona a letra ao lado da opção */}
                     </label>
                   ))}
                   <button className='submit' type="button" onClick={() => submitAnswer(currentPage)}>

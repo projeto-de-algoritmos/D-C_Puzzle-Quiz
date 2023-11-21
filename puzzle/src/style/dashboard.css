@@ -11,7 +11,7 @@
 }
 .form {
   background-color: rgba(139, 80, 8, 0.814);
-  width: 60%;
+  width: 64%;
   height: 75%;
   position: absolute;
   left: 22%;
@@ -89,11 +89,13 @@ p {
 }
 label {
   text-align: center;
-  margin-left: 8%;
-  padding-right: 20px;
+  align-items: center;
+  margin-left: 7%;
+  padding-left: -2px;
   font-size: 17px;
   font-family: 'Cinzel Decorative';
   font-weight: 100px;
+  width: 300px;
   /* color: rgb(206, 106, 35);
   -webkit-text-stroke: 0.6px white; */
   color: rgb(120, 21, 21);
